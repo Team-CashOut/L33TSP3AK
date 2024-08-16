@@ -1,51 +1,56 @@
+# Telebook
+
+Telegram Mini App for booking hotels *
+
+* — it's a demonstration of [Telegram Mini Apps](https://core.telegram.org/bots/webapps) platform. No real hotels and payments.
+
 <p align="center">
-  <a title="msys2.github.io" href="https://msys2.github.io"><img src="https://img.shields.io/website.svg?label=msys2.github.io&longCache=true&style=flat-square&url=http%3A%2F%2Fmsys2.github.io%2Findex.html&logo=github"></a><!--
-  -->
-  <a title="Join the chat on Matrix" href="https://matrix.to/#/#msys2_msys2:gitter.im"><img src="https://img.shields.io/badge/chat-on%20matrix-4db797.svg?longCache=true&style=flat-square&logo=matrix&logoColor=e8ecef"></a><!--
-  -->
-  <a title="GitHub Actions" href="https://github.com/msys2/msys2.github.io/actions?query=workflow%3Agithub%20pages"><img alt="github pages' workflow Status" src="https://img.shields.io/github/actions/workflow/status/msys2/msys2.github.io/main.yml?branch=main&longCache=true&style=flat-square&label=build&logo=github"></a><!--
-  -->
-  <a title="Follow msys2org on Twitter" href="https://twitter.com/msys2org"><img src="https://img.shields.io/twitter/follow/msys2org?style=flat-square&logo=x&logoColor=white&color=31A4F1"></a><!--
-  -->
-  <a title="Follow msys2org on Mastodon" href="https://fosstodon.org/@msys2org"><img src="https://img.shields.io/mastodon/follow/109365079526574177?color=000197&domain=https%3A%2F%2Ffosstodon.org%2F&logo=mastodon&logoColor=white&style=flat-square"></a><!--
-  -->
-  <a title="Join the community on Discord" href="https://discord.com/invite/jPQdRdDcT9"><img src="https://img.shields.io/discord/792780131906617355?color=5865F2&label=Discord&logo=discord&logoColor=white&style=flat-square"></a><!--
-  -->
+  <a href="https://t.me/tebook_bot/telebook">
+    <picture>
+      <source media="(prefers-color-scheme: dark)"  srcset="./docs/assets/cover.png">
+      <source media="(prefers-color-scheme: light)" srcset="./docs/assets/cover-light.png">
+      <img alt="Editor.js Logo" src="./docs/assets/cover.png">
+    </picture>
+  </a>
 </p>
 
-# MSYS2 Website
+<p align="center">
+ <a href="https://t.me/tebook_bot/telebook">@tebook_bot/telebook</a> |
+  <a href="https://core.telegram.org/bots/webapps">Telegram Mini Apps</a> |
+  <a href="#-how-to-use-repo">Documentation</a>
+</p>
 
-## Overview
+Use this project as an example or template for the creation of your app:
 
-This website is written in Markdown and gets built to a static website using
-[mkdocs](https://www.mkdocs.org/) and a modified version of the [mkdocs-material
-theme](https://squidfunk.github.io/mkdocs-material). Any new commits to the
-`main` branch will auto deploy to [GitHub pages](https://pages.github.com) using
-[a GitHub action](https://github.com/actions/deploy-pages). The resulting
-website is reachable under https://msys2.github.io and https://www.msys2.org.
-Changes to the `main` branch usually take a minute or two until they are live.
+1. 🧩 Meet Telegram Vue UI Kit — build native-like interfaces with ready-to-use components
+3. ❤️‍🔥 Instant picture previews and on-device cache
+4. ☘️ Smooth screen transitions
+2. ✨ Advanced DX — fast build, hot reloading, modern code style and linters, well-documented code
+5. 💎 Clean but simple architecture — easy to scale and maintain
+6. 📦 Production-ready deployment setup
+7. 💵 Payments support
 
-## Development
+## 👋 About the example
 
-For small changes:
+Telebook — is a kind of booking app that runs inside the Telegram. It provides several screens demonstrating different abilities: list views, cards, animations, forms, payments, etc.
 
-* Just use the online editor on GitHub and use the Markdown preview to inspect your changes
-* Open a PR with your changes in case you don't have commit rights
-* **Note:** The Markdown dialect and extensions understood by mkdocs and GitHub is
-  slightly different, so double check that the deployed website matches what you
-  expected
-* **Note:** Every page on the website has a small "edit" icon in the top right corner which leads you straight to the online editor for that page
+It uses mocked data:
+- Cities available for search
+- Hotels
+- Rooms
+- Reviews
+- All mock pictures are generated using [Shedevrum AI](https://shedevrum.ai)
 
-For larger changes:
+## 📖 How to use repo
 
-* `poetry install`
-* `poetry run mkdocs serve`
-* Access http://127.0.0.1:8000 - any changes to the sources should be
-  immediately visible in your browser
-* Open a PR with your changes or just push them if you have commit rights
+Use following instructions
 
-### Link Checker
+- 💗 [Get Started](./docs/GetStarted.md) - basic info about Mini Apps development
+- 🏠 [Frontend tech guide](./client/README.md) - how to setup Client
+- 🎁 [Backend tech guide](./server/README.md) - how to setup Backend
+- 🛍️ [Telegram Vue UI Kit](./client/src/presentation/components/README.md) - UI Kit guide
+- 💰 [How to setup Payments](./docs/Payments.md) - useful information about Payments integration
+- ⛅️ [Deployment guide](./docs/Deployment.md) - how to deploy
+- 😎 [Awesome List](./docs/Awesome.md) - list of resources that can be useful when building your own Telegram Mini App
 
-Run `./linkcheck.sh` to check for broken links. This script uses
-[lychee](https://github.com/lycheeverse/lychee) and requires Docker to be
-installed.
+Feel free to [Open Issue](https://github.com/neSpecc/telebook/issues/new) with your question or suggestion
